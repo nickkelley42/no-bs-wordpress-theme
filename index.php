@@ -18,6 +18,8 @@ if ( have_posts() ) {
     </section>
     <?php
   }
+} else {
+  _e( 'No matching posts.', 'textdomain' );
 }
 
 get_footer();
