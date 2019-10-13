@@ -8,7 +8,14 @@ if ( have_posts() ) {
     <section>
       <main>
         <?php
-          the_title('<h2>', '</h2>');
+          if ( is_singular() ) {
+            the_title("<h2>", "</h2>");
+          else {
+            the_title( sprintf(
+              '<h2><a href="%s">',
+              esc_url( get_permalink()
+            ) ), '</a></h2>' );
+          }
         ?>
         <p>Posted on <?php the_date(); ?> by <?php the_author(); ?></p>
         <?php
