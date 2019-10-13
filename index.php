@@ -9,7 +9,8 @@ if ( have_posts() ) {
       <main>
         <?php
           the_title('<h2>', '</h2>');
-          the_author();
+          $author = the_author();
+          echo "<p>Posted by $author</p>";
           the_content();
         ?>
       </main>
