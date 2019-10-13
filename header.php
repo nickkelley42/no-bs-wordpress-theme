@@ -10,8 +10,8 @@
   <h1><?php bloginfo('name'); ?></h1>
   <?php
     $description = get_bloginfo( 'description', 'display' );
-    if $description != "" { ?>
-      <p><?php echo get_bloginfo( 'description', 'display' ); ?></p>
+    if ($description != "") { ?>
+      <p><?php echo $description ?></p>
       <?php
     } ?>
 </header>
