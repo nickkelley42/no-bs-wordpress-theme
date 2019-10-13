@@ -10,8 +10,7 @@ if ( have_posts() ) {
         <?php
           the_title('<h2>', '</h2>');
         ?>
-        <p><?php the_date(); ?></p>
-        <p>Posted by <?php the_author(); ?></p>
+        <p>Posted on <?php the_date(); ?> by <?php the_author(); ?></p>
         <?php
           the_content();
         ?>
