@@ -7,8 +7,11 @@ if ( have_posts() ) {
     // Display post content ?>
     <section>
       <main>
-        <h2><?php the_title(); ?></h2><?php
-        the_content(); ?>
+        <?php
+          the_title('<h2>', '</h2');
+          the_author();
+          the_content();
+        ?>
       </main>
     </section>
     <?php
