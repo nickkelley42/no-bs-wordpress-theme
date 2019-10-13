@@ -9,10 +9,10 @@ if ( have_posts() ) {
       <main>
         <?php
           the_title('<h2>', '</h2>');
-          the_time();
-          echo "<p>Posted by ";
-          the_author();
-          echo "</p>";
+        ?>
+        <p><?php the_time(); ?></p>
+        <p>Posted by <?php the_author(); ?></p>
+        <?php
           the_content();
         ?>
       </main>
