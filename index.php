@@ -8,7 +8,7 @@ if ( have_posts() ) {
     <section>
       <main>
         <?php
-          the_title('<h2>', '</h2');
+          the_title('<h2>', '</h2>');
           the_author();
           the_content();
         ?>
