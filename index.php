@@ -19,7 +19,7 @@ if ( have_posts() ) {
     <?php
   }
 } else {
-  _e( 'No matching posts.', 'textdomain' );
+  ?><h2><?php _e( 'No matching posts.', 'textdomain' ); ?></h2><?php
 }
 
 get_footer();
