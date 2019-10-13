@@ -10,7 +10,7 @@ if ( have_posts() ) {
         <?php
           if ( is_singular() ) {
             the_title("<h2>", "</h2>");
-          else {
+          } else {
             the_title( sprintf(
               '<h2><a href="%s">',
               esc_url( get_permalink()
