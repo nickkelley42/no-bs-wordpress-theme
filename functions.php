@@ -12,3 +12,5 @@ if ( ! function_exists( 'nobs_setup' ) ) {
     ) );
   }
 }
+
+nobs_setup();
