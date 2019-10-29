@@ -16,7 +16,7 @@ if ( have_posts() ) {
               esc_url( get_permalink()
             ) ), '</a></h2>' );
           }
-        ?>
+        // if there's an author/post date? ?>
         <p>Posted on <?php the_date(); ?> by <?php the_author(); ?></p>
         <?php
           the_content();
