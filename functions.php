@@ -13,4 +13,4 @@ if ( ! function_exists( 'nobs_setup' ) ) {
   }
 }
 
-nobs_setup();
+add_action( 'after_setup_theme', 'nobs_setup' );
